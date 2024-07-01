@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
+    tools:context=".fragment.CommunityFragment">
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchCommunityTopic"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:iconifiedByDefault="false"
+        app:searchHintIcon="@null"
+        app:queryHint="Search..."
+        android:focusable="false"
+        android:background="@drawable/border_input"
+        app:closeIcon="@drawable/baseline_clear_24"
+        app:searchIcon="@drawable/baseline_search_24"
+        />
+    <ScrollView
+        android:id="@+id/svScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchCommunityTopic"
+
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_marginStart="20dp"
+                android:id="@+id/topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOPIC"
+                android:layout_marginBottom="80dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="30dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/showCommunityTopic"
+                android:layout_width="match_parent"
+                android:layout_height="460dp"
+                android:layout_below="@id/topic"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:scrollbars="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/topic" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

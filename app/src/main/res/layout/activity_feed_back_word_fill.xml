@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FeedBackWordFillActivity"
+    android:background="#FFF">
+
+    <ImageView
+        android:id="@+id/ivCorrect"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/correct"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="70dp"
+        />
+    <ImageView
+        android:id="@+id/ivIncorrect"
+        android:layout_width="110dp"
+        android:layout_height="150dp"
+        android:background="@drawable/incorrect"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="70dp"/>
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/baseline_arrow_back_ios_new_24"
+        android:background="@android:color/transparent"
+        app:tint="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:scaleType="fitCenter"
+        />
+
+    <TextView
+        android:id="@+id/tvCorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ivCorrect"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="0"
+        android:textSize="80dp"
+        android:textColor="#39FF14"
+        android:textStyle="bold"
+        android:layout_marginStart="90dp"/>
+    <TextView
+        android:id="@+id/tvIncorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="0"
+        android:textSize="80dp"
+        android:textColor="#F72119"
+        android:textStyle="bold"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="100dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fbRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCorrect" />
+</androidx.constraintlayout.widget.ConstraintLayout>

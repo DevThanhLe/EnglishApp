@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.UploadFolder">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="200dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/card_image"
+            android:padding="20dp"
+            >
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:background="@android:color/transparent"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_arrow_back_ios_new_24"
+                app:tint="@color/white"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Folder"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                >
+            </TextView>
+            <EditText
+                android:id="@+id/etNameFolder"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:padding="20dp"
+                android:maxLines="2"
+                android:lines="1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:background="@drawable/border_input"
+                android:hint="Enter your new Folder name"
+                android:inputType="text"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 "
+                android:gravity="start|center_vertical"
+                />
+            <Button
+                android:id="@+id/bSaveFolder"
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="SAVE"
+                android:textSize="25sp"
+                android:background="@drawable/border_button"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>

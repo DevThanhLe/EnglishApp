@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "143059628211",
+    "firebase_url": "https://appfinalproject-294f8-default-rtdb.firebaseio.com",
+    "project_id": "appfinalproject-294f8",
+    "storage_bucket": "appfinalproject-294f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:143059628211:android:c9ab7787ec6db9f7bac0c6",
+        "android_client_info": {
+          "package_name": "com.example.quizlearning"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvWhQS3i-Oh6NXBUYCIOhVL4npdKkCyl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

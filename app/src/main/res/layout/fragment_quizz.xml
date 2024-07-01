@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_quizletjpg"
+    tools:context=".fragment.QuizzFragment">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@drawable/learn" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="110dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <Switch
+            android:id="@+id/swLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"            android:layout_marginHorizontal="10dp"
+            android:checked="false"
+            tools:ignore="TouchTargetSizeCheck" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vietnamese"
+            android:textSize="20sp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:background="@color/white"
+        android:id="@+id/cvFlashCard"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="5dp"
+        android:translationZ="3dp"
+        app:cardCornerRadius="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/studyName1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FLASH CARD"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:background="@color/white"
+        android:id="@+id/cvQuizz"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="5dp"
+        android:translationZ="3dp"
+        app:cardCornerRadius="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/studyName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="QUIZZ"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:background="@color/white"
+        android:id="@+id/cvWordFill"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="5dp"
+        android:translationZ="3dp"
+        app:cardCornerRadius="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/studyName3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WORD FILL"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

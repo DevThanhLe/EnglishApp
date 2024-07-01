@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.UpdateTopic">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="200dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="600dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:background="@drawable/card_image"
+            android:alpha="0.9"
+            >
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_arrow_back_ios_new_24"
+                android:background="@android:color/transparent"
+                app:tint="@color/white"
+                />
+            <TextView
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Word"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                >
+            </TextView>
+            <ImageView
+                android:id="@+id/editImageWord"
+                android:src="@drawable/upload_data"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                />
+            <EditText
+                android:id="@+id/etUpdateWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="20dp"
+                android:maxLines="3"
+                android:background="@drawable/border_input"
+                android:hint="Edit your word"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:inputType="text"
+                android:gravity="start|center_vertical"
+                />
+
+            <EditText
+                android:id="@+id/etUpdateMeanWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Edit your meaning word"
+                android:padding="20dp"
+                android:maxLines="3"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:inputType="text"
+                android:background="@drawable/border_input"
+                />
+<!--            <EditText-->
+<!--                android:id="@+id/etUpdateDescWord"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:hint="Edit your description word"-->
+<!--                android:padding="20dp"-->
+<!--                android:maxLines="3"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textColorHint="@color/black"-->
+<!--                android:inputType="text"-->
+<!--                android:background="@drawable/border_input"-->
+<!--                />-->
+            <Button
+                android:id="@+id/bSaveEdit"
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:text="SAVE UPDATE"
+                android:textSize="25sp"
+                android:background="@drawable/border_button"
+                />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>

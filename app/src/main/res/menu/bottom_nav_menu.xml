@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_nav"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/flipCard_nav"
+        android:icon="@drawable/baseline_g_translate_24"
+        android:title="Translate" />
+    <item
+        android:id="@+id/quizz_nav"
+        android:icon="@drawable/baseline_menu_book_24"
+        android:title="Quizz" />
+    <item
+        android:id="@+id/community_nav"
+        android:icon="@drawable/baseline_people_24"
+        android:title="Community" />
+    <item
+        android:id="@+id/profile_nav"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="Setting" />
+</menu>

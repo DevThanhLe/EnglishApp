@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/action_delete"
+        android:title="Delete Topic"
+        android:icon="@drawable/baseline_delete_24"
+        android:color="@color/black"
+        />
+    <item
+        android:id="@+id/action_edit"
+        android:title="Edit Topic"
+        android:color="@color/black"
+        android:icon="@drawable/baseline_edit_24"
+        />
+
+    <item
+        android:id="@+id/action_move_to_folder"
+        android:title="Move To Folder"
+        android:icon="@drawable/baseline_drive_file_move_24"
+        />
+    <item
+        android:id="@+id/action_get_topic"
+        android:title="Get Topic"
+        android:visible="false"
+        />
+</menu>

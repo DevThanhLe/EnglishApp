@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorSecondary"
+    tools:context=".activity.DetailTopicActivity">
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailTitleTopic"
+        android:layout_marginTop="14dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:text="Title"
+        />
+
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detailTitleTopic"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Description:"
+        android:id="@+id/detailDescTopic"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/wordOfTopic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detailDescTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="WORDS:"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        />
+<!--    <Button-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/fabMenu"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:id="@+id/bAddWords"-->
+<!--        android:textSize="25sp"-->
+<!--        android:text="Add word"-->
+<!--        android:background="@drawable/border_button"-->
+<!--        />-->
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/optionTopic"
+            android:layout_marginRight="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:menu_colorNormal="@color/colorPrimaryDark"
+            app:menu_colorPressed="@color/colorPrimaryLight"
+            app:menu_fab_size="normal"
+            android:background="@color/green"
+            android:src="@drawable/baseline_keyboard_arrow_up_24"
+            app:menu_showShadow="true">
+
+<!--            <com.github.clans.fab.FloatingActionButton-->
+<!--                android:id="@+id/bDeleteTopic"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/baseline_delete_24"-->
+<!--                app:fab_colorNormal="@color/blue"-->
+<!--                app:fab_colorPressed="@color/red"-->
+<!--                app:fab_showShadow="true"-->
+<!--                app:fab_size="mini" />-->
+
+<!--            <com.github.clans.fab.FloatingActionButton-->
+<!--                android:id="@+id/bUpdateTopic"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/baseline_edit_24"-->
+<!--                app:fab_colorNormal="@color/blue"-->
+<!--                app:fab_colorPressed="@color/red"-->
+<!--                app:fab_showShadow="true"-->
+<!--                app:fab_size="mini" />-->
+        </com.github.clans.fab.FloatingActionButton>
+    <ImageView
+        app:layout_constraintStart_toStartOf="@id/detailTitleTopic"
+        app:layout_constraintEnd_toEndOf="@id/detailTitleTopic"
+        app:layout_constraintTop_toBottomOf="@id/detailTitleTopic"
+        android:id="@+id/icPublic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/baseline_public_24"
+        />
+    <ImageView
+        app:layout_constraintStart_toStartOf="@id/detailTitleTopic"
+        app:layout_constraintEnd_toEndOf="@id/detailTitleTopic"
+        app:layout_constraintTop_toBottomOf="@id/detailTitleTopic"
+        android:id="@+id/icPrivate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/baseline_lock_person_24"
+        android:visibility="gone"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/showWords"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@id/optionTopic"
+        app:layout_constraintTop_toBottomOf="@id/wordOfTopic"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

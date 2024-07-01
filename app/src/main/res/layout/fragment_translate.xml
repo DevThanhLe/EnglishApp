@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="30dp"
+    android:layout_marginBottom="30dp"
+    android:background="@color/colorAccent"
+    tools:context=".fragment.TranslateFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/google_translate_icon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Quiz Translate"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/background_cycle"
+                android:elevation="4dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_from"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:padding="3dp" />
+                <RelativeLayout
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"/>
+
+                <!--            <ImageView-->
+                <!--                android:layout_width="0dp"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_gravity="center"-->
+                <!--                android:layout_weight="1"-->
+                <!--                android:src="@drawable/transfer_icon" />-->
+
+                <Spinner
+                    android:id="@+id/spinner_to"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:padding="3dp" />
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:elevation="8dp"
+                android:padding="5dp"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_sourceText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_cycle"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="Enter something..."
+                    android:importantForAutofill="no"
+                    android:inputType="textImeMultiLine|textMultiLine"
+                    android:padding="15dp"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/greyText"
+                    android:textSize="18sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_translate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Translate"
+                android:textColor="@color/white"
+                android:background="@drawable/cycle_primarycolor"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:textSize="22sp"
+                android:textAllCaps="false"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_translatedText"
+                android:text="Translated Text here!"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="60dp"
+                android:elevation="3dp"
+                android:background="@drawable/background_cycle"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="15dp"
+                android:letterSpacing="0.03"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

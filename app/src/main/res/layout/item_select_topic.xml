@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/rvTitleTopic"
+            android:layout_width="288dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Title"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/rvImgAuthTopic"
+            android:padding="8dp"
+            android:layout_marginStart="20dp"
+            android:scaleType="centerCrop"
+            style="@style/logo"
+            android:src="@drawable/upload_data"
+            android:layout_below="@id/rvTitleTopic"
+            />
+
+        <LinearLayout
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/rvImgAuthTopic"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/rvTitleTopic"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="60dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rvDescTopic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/rvAuthTopic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:lines="1"
+                android:text="Created by"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/rvPublic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="30dp"
+            android:src="@drawable/baseline_public_24"
+            android:layout_alignParentRight="true"
+            />
+
+        <ImageView
+            android:id="@+id/rvPrivate"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_lock_person_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="30dp"
+            />
+        <ImageView
+            android:id="@+id/getTopic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_drive_file_move_24"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="25dp"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
